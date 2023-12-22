@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layout_doc"
+        android:layout_width="313dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/roundCardView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="0dp"
+            app:cardCornerRadius="40dp">
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_height="19dp"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/poppins"
+            android:textColor="#102C57"
+            android:id="@+id/nama"
+            android:text="Nama Dokter"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/poppins"
+            android:textSize="6dp"
+            android:textColor="#576b89"
+            android:id="@+id/bidang"
+            android:text="Isi Bidang"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/stardoc"-->
+<!--                android:layout_height="8dp"-->
+<!--                android:layout_width="8dp"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                android:src="@drawable/ic_star"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/ratedoc"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins"-->
+<!--                android:textSize="8dp"-->
+<!--                android:textColor="#102C57"-->
+<!--                android:text="4.5"/>-->
+
+            <ImageView
+                android:id="@+id/whdocicon"
+                android:layout_height="8dp"
+                android:layout_width="8dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_wh"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="8dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#102C57"
+                android:id="@+id/tahun"
+                android:text="5 Tahun"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/hargadoc"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="8dp"
+                android:textColor="#102C57"
+                android:text="Rp. 0.000"/>
+
+            <TextView
+                android:id="@+id/detailbtn"
+                android:layout_width="62dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="109dp"
+                android:padding="2dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="#ffffff"
+                android:text="Detail"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:background="@drawable/bg_button" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="url"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAccessibility="no" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

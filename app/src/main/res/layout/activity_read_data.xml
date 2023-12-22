@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F0E5"
+    tools:context=".readData">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_halfcircle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="29dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="69dp"
+        android:layout_marginStart="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Nomor Antrian"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/antrian"
+        android:layout_width="282dp"
+        android:layout_height="205dp"
+        android:orientation="vertical"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/bg_circle"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nomor Antrian Anda"
+            android:textAlignment="center"
+            android:textColor="#102C57"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/queueNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:textAlignment="center"
+            android:textColor="#102C57"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:text="NO"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="282dp"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/bg_circle"
+        app:layout_constraintTop_toBottomOf="@id/antrian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:text="Detail Pemesanan"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nama Dokter"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:layout_marginLeft="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/doctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginLeft="14dp"
+            android:text="Isi Nama Dokter"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nama Hewan"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:layout_marginLeft="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="11dp"/>
+        <TextView
+            android:id="@+id/animalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginLeft="14dp"
+            android:text="Isi Nama Hewan"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Jenis Hewan"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:layout_marginLeft="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="11dp"/>
+        <TextView
+            android:id="@+id/animalType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginLeft="14dp"
+            android:text="Isi Jenis Hewan"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/navbar"
+        android:layout_width="295dp"
+        android:layout_height="54dp"
+        android:background="@drawable/bg_navbar"
+        android:contextClickable="true"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:contextClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:contextClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/prof"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        app:srcCompat="@drawable/user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F0E5"
+    tools:context=".InsertAntrian">
+
+    <TextView
+        android:id="@+id/tambahantrian"
+        android:layout_width="255dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/tambahantrian"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/tambahkan_antrian2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/buttonback"
+        app:layout_constraintEnd_toStartOf="@+id/tambahantrian"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <LinearLayout
+        android:id="@+id/isi"
+        android:layout_width="322dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tambahantrian"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:id="@+id/titledocname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/nama_dokter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="106dp" />
+
+        <TextView
+            android:id="@+id/namadokter"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_input2"
+            android:text="@string/masukkan_nama_dokter"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/namahewan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/nama_hewan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="106dp" />
+
+        <EditText
+            android:id="@+id/editNamaHewan"
+            android:layout_width="321dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="7dp"
+            android:autofillHints=""
+            android:background="@drawable/bg_input3"
+            android:hint="@string/masukkan_nama_hewan"
+            android:inputType="text"
+            android:labelFor="@id/editNamaHewan"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription,DuplicateIds,LabelFor,TextContrastCheck,VisualLintBounds"
+            tools:layout_editor_absoluteY="130dp" />
+
+        <TextView
+            android:id="@+id/jenishewan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/jenis_hewan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="204dp" />
+
+        <EditText
+            android:id="@+id/editJenisHewan"
+            android:layout_width="321dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="7dp"
+            android:autofillHints=""
+            android:background="@drawable/bg_input3"
+            android:hint="@string/masukkan_jenis_hewan"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck,VisualLintBounds"
+            tools:layout_editor_absoluteY="228dp" />
+
+        <TextView
+            android:id="@+id/namapemilik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/nama_pemilik"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="303dp" />
+
+        <EditText
+            android:id="@+id/editNamaPemilik"
+            android:layout_width="321dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="7dp"
+            android:autofillHints=""
+            android:background="@drawable/bg_input3"
+            android:hint="@string/masukkan_nama_pemilik"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck,VisualLintBounds"
+            tools:layout_editor_absoluteY="327dp" />
+
+        <TextView
+            android:id="@+id/kontakpemilik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/kontak_pemilik"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="402dp" />
+
+        <EditText
+            android:id="@+id/editKontakPemilik"
+            android:layout_width="321dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="7dp"
+            android:autofillHints=""
+            android:background="@drawable/bg_input3"
+            android:hint="@string/masukkan_kontak_pemilik"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck,VisualLintBounds"
+            tools:layout_editor_absoluteY="426dp" />
+
+        <TextView
+            android:id="@+id/deskripsigejala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/deskripsi_gejala"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="521dp" />
+
+        <EditText
+            android:id="@+id/editGejala"
+            android:layout_width="321dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="7dp"
+            android:autofillHints=""
+            android:background="@drawable/bg_input2"
+            android:hint="@string/masukkan_gejala"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck,VisualLintBounds"
+            tools:layout_editor_absoluteY="545dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonantri"
+        android:layout_width="209dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/bg_button"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/masukkan_antrian"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isi"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonlihat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:background="@drawable/bg_button"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/lihatdata"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonantri"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

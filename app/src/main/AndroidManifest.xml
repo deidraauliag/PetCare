@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PetCare"
+        tools:targetApi="31">
+        <activity
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.petcare.Antrian" />
+        <activity android:name="com.example.petcare.CobaRecyclerView" />
+        <activity android:name="com.example.petcare.detail_dokter" />
+        <activity android:name="com.example.petcare.editProf" />
+        <activity android:name="com.example.petcare.editProf2" />
+        <activity android:name="com.example.petcare.editProf" />
+        <activity android:name="com.example.petcare.InsertAntrian" />
+        <activity android:name="com.example.petcare.InsertAntrian" />
+        <activity android:name="com.example.petcare.MainActivity" />
+        <activity android:name="com.example.petcare.profile" />
+        <activity android:name="com.example.petcare.profile" />
+        <activity android:name="com.example.petcare.readData" />
+        <activity android:name="com.example.petcare.registrasi" />
+        <activity android:name="com.example.petcare.registrasi" />
+        <activity android:name="com.example.petcare.rvQueue" />
+        <activity android:name="com.example.petcare.login" />
+        <activity android:name="com.example.petcare.ProfileActivity" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

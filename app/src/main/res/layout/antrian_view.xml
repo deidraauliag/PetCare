@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F0E5"
+    tools:context=".Antrian">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#FFBD9B"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:layout_width="29dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="69dp"
+        android:layout_marginStart="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Nomor Antrian"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/antrian"
+        android:layout_width="282dp"
+        android:layout_height="205dp"
+        android:orientation="vertical"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/bg_circle"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:text="Antrian Sedang Berjalan"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="PC-007"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textAlignment="center"
+            android:text="Nomor Antrian Anda"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#102C57"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textAlignment="center"
+            android:text="PC-016"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="282dp"
+        android:layout_height="343dp"
+        android:orientation="vertical"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/bg_circle"
+        app:layout_constraintTop_toBottomOf="@id/antrian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:text="Detail Pemesanan"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nama Dokter"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:layout_marginLeft="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginLeft="14dp"
+            android:text="Drh.Mawar"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Jenis Hewan"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:layout_marginLeft="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="11dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginLeft="14dp"
+            android:text="Kucing"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nama Pemilik"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:layout_marginLeft="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="11dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginLeft="14dp"
+            android:text="Haerin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Deskripsi Gejala"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:layout_marginLeft="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="11dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#102C57"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in nisl vel enim imperdiet tincidunt. Curabitur feugiat nibh at velit bibendum placerat. Nunc tincidunt nulla sit amet elit cursus, in blandit massa rhoncus. "/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

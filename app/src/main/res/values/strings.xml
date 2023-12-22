@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Pet Care</string>
+    <string name="drh_mawar">Drh. Mawar</string>
+    <string name="detail_doctor">Detail Doctor</string>
+    <string name="_5_tahun">5 Tahun</string>
+    <string name="bidang_keahlian">Bidang Keahlian</string>
+    <string name="alumnus">Alumnus</string>
+    <string name="universitas_gadjah_mada_2019">Universitas Gadjah Mada, 2019</string>
+    <string name="_2020012345678910">2020012345678910</string>
+    <string name="nomor_str">Nomor STR</string>
+    <string name="hewan_ternak_anjing_dan_kucing">Hewan Ternak, Anjing dan Kucing</string>
+    <string name="pilih">Pilih</string>
+
+    <string name="add_dokter">Tambah Dokter</string>
+    <string name="isi_nama_dokter">Isi Nama Dokter</string>
+    <string name="isi_tahun">Isi Tahun</string>
+    <string name="isi_univ">Isi Universitas</string>
+    <string name="isi_nomor">Isi Nomor</string>
+    <string name="isi_bidang">Isi Bidang</string>
+
+    <string name="masukkan_nama_hewan">Masukkan nama hewan</string>
+    <string name="masukkan_jenis_hewan">Masukkan jenis hewan</string>
+    <string name="masukkan_nama_pemilik">Masukkan nama pemilik</string>
+    <string name="masukkan_kontak_pemilik">Masukkan kontak pemilik</string>
+    <string name="masukkan_gejala">Masukkan gejala</string>
+    <string name="nama_hewan">Nama Hewan</string>
+    <string name="jenis_hewan">Jenis Hewan</string>
+    <string name="nama_pemilik">Nama Pemilik</string>
+    <string name="kontak_pemilik">Kontak Pemilik</string>
+    <string name="deskripsi_gejala">Deskripsi Gejala</string>
+    <string name="masukkan_antrian">Masukkan Antrian</string>
+    <string name="tambahkan_antrian2">Tambahkan Antrian</string>
+    <string name="tambahantrian">tambahantrian</string>
+    <string name="buttonback">Button Back</string>
+    <string name="editnamahewan">Edit nama hewan</string>
+
+    <string name="masuk">Masuk</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="masuk1">Masuk</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="daftar">Daftar</string>
+    <string name="belum_memiliki_akun">Belum memiliki akun?</string>
+    <string name="masuk2">Masuk</string>
+    <string name="logo">logo</string>
+    <string name="username1">Username</string>
+    <string name="password1">Password</string>
+    <string name="nama1">Nama</string>
+    <string name="email">Email</string>
+    <string name="daftar1">Daftar</string>
+    <string name="sudah_memiliki_akun">Sudah memiliki akun?</string>
+    <string name="logo1">logo1</string>
+    <string name="daftar2">Daftar</string>
+    <string name="login2">Login</string>
+    <string name="rp_0_000">Rp 0.000</string>
+
+    <string name="lihatdata">Lihat Antrian</string>
+    <string name="ownername">Nama Owner</string>
+    <string name="animname">Nama Hewan</string>
+    <string name="animtype">(Jenis Hewan)</string>
+    <string name="queuenum">NO</string>
+    <string name="download_foto">download foto</string>
+    <string name="nama_dokter">nama_dokter</string>
+    <string name="masukkan_nama_dokter">masukkan_nama_dokter</string>
+    <string name="nomer_telepon">Nomer Telepon</string>
+    <string name="edit">Edit</string>
+    <string name="email2">Email</string>
+    <string name="profil_saya">Profil Saya</string>
+    <string name="username2">Username</string>
+    <string name="nomor_antrian">Nomor Antrian</string>
+
+
+</resources>

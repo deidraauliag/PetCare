@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F0E5"
+    tools:context=".CobaRecyclerView">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="313dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/greet"
+            android:layout_width="199dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginRight="156dp"
+            android:fontFamily="@font/poppins"
+            android:text="Halo, username!"
+            android:textColor="@color/Navy"
+            android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/quotes"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginRight="123dp"
+        android:layout_marginLeft="18dp"
+        android:textColor="@color/softNavy"
+        android:text="Bagaimana Kami Bisa Membantu Si Kesayangan Hari Ini?"/>
+   </LinearLayout>
+
+    <ImageView
+        android:id="@+id/character"
+        android:layout_width="92.24dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="58dp"
+        android:src="@drawable/character"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/titlelist"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="216dp"
+        android:fontFamily="@font/poppins"
+        android:text="Daftar Dokter"
+        android:textColor="@color/black"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listdoc"
+        android:layout_width="313dp"
+        android:layout_height="400dp"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titlelist"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_doctor" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/navbar"
+        android:layout_width="295dp"
+        android:layout_height="54dp"
+        android:background="@drawable/bg_navbar"
+        android:contextClickable="true"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:contextClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:contextClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/prof"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        app:srcCompat="@drawable/user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
